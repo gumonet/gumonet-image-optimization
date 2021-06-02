@@ -1,8 +1,8 @@
 {
   "name": "gumonet-image-optimization",
   "version": "1.0.0",
+  "private": true,
   "description": "Image optimization with sharp",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +10,12 @@
     "type": "git",
     "url": "git@github-gumonet:gumonet/gumonet-image-optimization.git"
   },
-  "author": "gumonet",
-  "license": "MIT"
+  "author": {
+    "name": "Angel Gutierrez Monola",
+    "web": "https://www.gumonet.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "sharp": "^0.28.3"
+  }
 }
