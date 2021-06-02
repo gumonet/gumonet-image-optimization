@@ -1,0 +1,15 @@
+{
+  "name": "gumonet-image-optimization",
+  "version": "1.0.0",
+  "description": "Image optimization with sharp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-gumonet:gumonet/gumonet-image-optimization.git"
+  },
+  "author": "gumonet",
+  "license": "MIT"
+}
