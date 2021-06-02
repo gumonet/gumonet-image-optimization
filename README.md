@@ -4,5 +4,5 @@ Use shortpixel to process the images [Sharp pixel](https://sharp.pixelplumbing.c
 ## Instructions 
 1. Clone the repo
 2. Execute `$ npm install`
-3. Put the images to process in originals folder
+3. Put the images to process into a new folder called **originals**
 4. Run `$ npm index.js`
