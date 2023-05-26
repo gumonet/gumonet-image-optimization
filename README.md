@@ -3,9 +3,10 @@ Use shortpixel to process the images [Sharp pixel](https://sharp.pixelplumbing.c
 
 ## Instructions 
 1. Clone the repo
-2. Execute `$ npm install`
-3. Put the images to process into a new folder called **originals**
-4. Run `$ npm index.js` 
+2. Run npm install
+3. npm install -g .
+4. npm link
+5.  
 
 ##Next steps
 - Generate the images break points like this tool -> [https://www.responsivebreakpoints.com/](https://www.responsivebreakpoints.com/)

@@ -1,10 +1,23 @@
 #!/usr/bin/env node
 import yargs from "yargs";
 import {hideBin} from "yargs/helpers";
-
+import processImage from "./modules/process-image.js";
 
 const argv = yargs(hideBin(process.argv)).argv;
 
-import processImage from "./modules/process-image.js";
+let output = '';
+let size = 1000;
+let format = 'jpeg'
 
-processImage.compress(argv.filename, 1000, 'jpeg', );
+
+if( argv.out ) {
+    output = `${argv.out}/`;
+}
+if( argv.size ) {
+    size = argv.size;
+}
+if( argv.format ) {
+    format = argv.format;
+}
+
+processImage.compress(argv.filename, size, format, output );

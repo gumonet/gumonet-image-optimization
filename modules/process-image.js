@@ -1,22 +1,17 @@
-//const sharp = require("sharp");
-//const fs    = require("fs");
 import sharp from "sharp";
-import * as fs from 'fs';
-
-
 
 const processImage = (function(){
         
-    function compress( imagePath, width, format ){
+    function compress( imagePath, width, format, output ){
         const isImageFile = /\.(jpe?g|png|avif)$/i.test(imagePath); //Validate image format
 
          if( isImageFile ){
              const filename = imagePath.split(".").slice(0,-1).join("."); //get file extension
-
+             const outputdir   = `${output}${filename}-optimized.${format}` 
              sharp( `${imagePath}`)
                  .resize( width )
-                 .toFile( `${filename}.${format}`, () =>
-                     console.log( `${filename}.${format}`)
+                 .toFile( outputdir, () =>
+                     console.log( outputdir )
                  );   
          } else {
             console.log(" Image no valid!")
